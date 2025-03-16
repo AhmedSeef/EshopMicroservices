@@ -1,6 +1,7 @@
 ﻿namespace Basket.API.Basket.GetBasket
 {
     public record GetBasketResponse(ShoppingCart Cart);
+
     public class GetBasketEndpoints : ICarterModule
     {
         public void AddRoutes(IEndpointRouteBuilder app)
@@ -20,5 +21,4 @@
                 .WithDescription("Get Product By Id");
         }
     }
-
 }
