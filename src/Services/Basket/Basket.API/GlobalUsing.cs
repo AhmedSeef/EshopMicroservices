@@ -11,3 +11,4 @@ global using FluentValidation;
 global using Basket.API.Exceptions;
 global using Microsoft.Extensions.Caching.Distributed;
 global using System.Text.Json;
+global using Discount.Grpc;
