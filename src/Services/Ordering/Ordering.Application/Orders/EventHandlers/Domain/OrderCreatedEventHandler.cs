@@ -1,7 +1,7 @@
 ﻿namespace Ordering.Application.Orders.EventHandlers.Domain
 {
     public class OrderCreatedEventHandler
-        (IPublishEndpoint publishEndpoint, ILogger<OrderCreatedEventHandler> logger)
+        (ILogger<OrderCreatedEventHandler> logger)
         : INotificationHandler<OrderCreatedEvent>
     {
         public Task Handle(OrderCreatedEvent notification, CancellationToken cancellationToken)
